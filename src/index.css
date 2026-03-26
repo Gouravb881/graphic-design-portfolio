@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 transition-colors duration-300 antialiased;
+  }
+  
+  .dark body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .dark .glass {
+    @apply bg-zinc-900/50 backdrop-blur-md border border-zinc-800/50 shadow-2xl;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300 rounded-full;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-700;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-400;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-600;
+  }
+}
