@@ -534,9 +534,9 @@ const PortfolioGallery = () => {
       tall: false,
     },
     {
-      title: 'AI Concept Art',
+      title: 'Product Design Concept',
       category: 'Digital Art',
-      img: '/Product/Gemini_Generated_Image_pr2ctcpr2ctcpr2c.png',
+      img: '/Product/product_gemini.png',
       tall: true,
     },
     {
