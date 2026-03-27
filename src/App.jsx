@@ -73,7 +73,7 @@ const Sidebar = ({ isOpen, setOpen }) => {
         <div className="mt-auto space-y-2 pt-6 border-t border-zinc-200 dark:border-zinc-800">
           <div className="flex items-center space-x-3 text-xs text-zinc-500 dark:text-zinc-400">
             <Mail size={14} />
-            <span>gourav@bamaniya.design</span>
+            <span>gouravbamaniya441@gmail.com</span>
           </div>
           <a href="/CV.pdf" download="Gourav_Bamaniya_CV.pdf" className="w-full mt-4 flex justify-between items-center px-5 py-3.5 bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 rounded-xl text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98] shadow-sm">
             <span>Download CV</span>
@@ -473,12 +473,6 @@ const SkillsAndStrengths = () => {
 
 const PortfolioGallery = () => {
   const projects = [
-    {
-      title: 'Premium Branding Design',
-      category: 'Branding',
-      img: '/Product/premium_ui.png',
-      tall: true,
-    },
     {
       title: 'Business Card Design',
       category: 'Branding',
