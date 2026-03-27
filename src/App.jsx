@@ -474,6 +474,12 @@ const SkillsAndStrengths = () => {
 const PortfolioGallery = () => {
   const projects = [
     {
+      title: 'Premium Branding Design',
+      category: 'Branding',
+      img: '/Product/premium_ui.png',
+      tall: true,
+    },
+    {
       title: 'Business Card Design',
       category: 'Branding',
       img: '/Product/card.png',
@@ -483,6 +489,12 @@ const PortfolioGallery = () => {
       title: 'Brand Colors',
       category: 'Design System',
       img: '/Product/col.jpg',
+      tall: false,
+    },
+    {
+      title: 'Essential Branding',
+      category: 'Branding',
+      img: '/Product/essential.jpg',
       tall: false,
     },
     {
@@ -498,12 +510,23 @@ const PortfolioGallery = () => {
       tall: true,
     },
     {
+      title: 'Men in Black Concept',
+      category: 'Graphic Design',
+      img: '/Product/men in black.jpg',
+      tall: true,
+    },
+    {
       title: 'Creative Branding',
       category: 'Branding',
       img: '/Product/vsdvev.jpg',
       tall: false,
     },
-
+    {
+      title: 'New Collection',
+      category: 'Fashion',
+      img: '/Product/new.jpg',
+      tall: false,
+    },
     {
       title: 'Apparel Mockup',
       category: 'Mockups',
@@ -517,6 +540,18 @@ const PortfolioGallery = () => {
       tall: false,
     },
     {
+      title: 'AI Concept Art',
+      category: 'Digital Art',
+      img: '/Product/Gemini_Generated_Image_pr2ctcpr2ctcpr2c.png',
+      tall: true,
+    },
+    {
+      title: 'Trending Thumbnail',
+      category: 'Digital Art',
+      img: '/Product/thumbnail 2.jpg',
+      tall: true,
+    },
+    {
       title: 'T-Shirt Concept',
       category: 'Apparel',
       img: '/Product/download (7).jpg',
@@ -527,6 +562,12 @@ const PortfolioGallery = () => {
       category: 'Fashion',
       img: '/Product/download (12).jpg',
       tall: true,
+    },
+    {
+      title: 'Social Media Thumbnail',
+      category: 'Digital Marketing',
+      img: '/Product/thumbnail.png',
+      tall: false,
     },
   ];
 
