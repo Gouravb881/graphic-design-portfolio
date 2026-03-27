@@ -534,12 +534,6 @@ const PortfolioGallery = () => {
       tall: false,
     },
     {
-      title: 'Product Design Concept',
-      category: 'Digital Art',
-      img: '/Product/product_gemini.png',
-      tall: true,
-    },
-    {
       title: 'Trending Thumbnail',
       category: 'Digital Art',
       img: '/Product/thumbnail 2.jpg',
