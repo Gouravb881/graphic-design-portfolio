@@ -534,12 +534,6 @@ const PortfolioGallery = () => {
       tall: false,
     },
     {
-      title: 'Strategic Product Branding',
-      category: 'Branding',
-      img: '/Product/product_gemini.png',
-      tall: true,
-    },
-    {
       title: 'Trending Thumbnail',
       category: 'Digital Art',
       img: '/Product/thumbnail 2.jpg',
