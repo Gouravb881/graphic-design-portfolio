@@ -10,7 +10,7 @@ function cn(...inputs) {
 
 // Components
 const Sidebar = ({ isOpen, setOpen }) => {
-  const links = ['Overview', 'Software', 'Education', 'Skills', 'Portfolio', 'Contact'];
+  const links = ['Overview', 'Software', 'Education', 'Skills', 'Websites', 'Portfolio', 'Contact'];
   
   return (
     <>
@@ -277,11 +277,11 @@ const SoftwareTool = ({ tool, index }) => {
     >
       <div className="relative w-28 h-28 md:w-32 md:h-32 mb-5 flex items-center justify-center">
         {/* Soft neumorphic outer circle */}
-        <div className="absolute inset-0 rounded-full bg-zinc-100 dark:bg-zinc-800
+        <div className="absolute inset-0 rounded-full bg-zinc-100 dark:bg-zinc-800/90
           shadow-[4px_4px_12px_rgba(0,0,0,0.1),-4px_-4px_12px_rgba(255,255,255,0.9)]
-          dark:shadow-[4px_4px_12px_rgba(0,0,0,0.5),-4px_-4px_12px_rgba(255,255,255,0.04)]
+          dark:shadow-[4px_4px_12px_rgba(0,0,0,0.6),-4px_-4px_12px_rgba(255,255,255,0.06)]
           group-hover:shadow-[6px_6px_18px_rgba(0,0,0,0.15),-6px_-6px_18px_rgba(255,255,255,0.95)]
-          dark:group-hover:shadow-[6px_6px_18px_rgba(0,0,0,0.6),-6px_-6px_18px_rgba(255,255,255,0.06)]
+          dark:group-hover:shadow-[6px_6px_18px_rgba(0,0,0,0.7),-6px_-6px_18px_rgba(255,255,255,0.08)]
           group-hover:scale-105 transition-all duration-500 ease-out" />
 
         {/* Icon container */}
@@ -290,7 +290,7 @@ const SoftwareTool = ({ tool, index }) => {
             <img
               src={tool.img}
               alt={tool.name}
-              className="w-full h-full object-contain drop-shadow-sm"
+              className="w-full h-full object-contain filter drop-shadow-sm dark:drop-shadow-[0_0_15px_rgba(255,255,255,0.35)] dark:brightness-110 transition-all duration-300"
             />
           ) : (
             <div
@@ -314,41 +314,35 @@ const SoftwareGrid = () => {
   const tools = [
     {
       name: 'ILLUSTRATOR',
-      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg',
+      img: 'https://skillicons.dev/icons?i=ai',
     },
     {
       name: 'PHOTOSHOP',
-      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg',
+      img: 'https://skillicons.dev/icons?i=ps',
     },
     {
       name: 'AFTER EFFECTS',
-      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-plain.svg',
+      img: 'https://skillicons.dev/icons?i=ae',
     },
     {
-      name: 'AUTOCAD',
-      img: 'https://cdn.simpleicons.org/autocad/E51937',
+      name: 'FIGMA',
+      img: 'https://skillicons.dev/icons?i=figma',
     },
     {
-      name: '3DS MAX',
-      img: null,
-      abbr: '3DS',
-      bg: 'linear-gradient(135deg, #1565C0, #0D47A1)',
+      name: 'VS CODE',
+      img: 'https://skillicons.dev/icons?i=vscode',
     },
     {
-      name: 'SKETCHUP',
-      img: 'https://cdn.simpleicons.org/sketchup/005F9E',
+      name: 'REACT',
+      img: 'https://skillicons.dev/icons?i=react',
     },
     {
-      name: 'V-RAY',
-      img: null,
-      abbr: 'VR',
-      bg: 'linear-gradient(135deg, #1A1A1A, #444)',
+      name: 'WORDPRESS',
+      img: 'https://skillicons.dev/icons?i=wordpress',
     },
     {
-      name: 'ENSCAPE',
-      img: null,
-      abbr: 'EN',
-      bg: 'linear-gradient(135deg, #0C7B5E, #0a5e47)',
+      name: 'GIT',
+      img: 'https://skillicons.dev/icons?i=git',
     },
   ];
 
@@ -371,9 +365,9 @@ const SoftwareGrid = () => {
 
 const Education = () => {
   const roadmap = [
-    { year: '2023 — 2025', degree: 'Masters in Interior Architecture', institute: '' },
-    { year: '2019 — 2023', degree: 'Bachelor of Design', institute: '' },
-    { year: '2017 — 2019', degree: 'Pre-Architecture Diploma', institute: '' },
+    { year: '2021 — 2025', degree: 'Bachelor of Technology (B.Tech)', institute: 'Engineering Institute' },
+    { year: '2019 — 2021', degree: 'Higher Secondary Education (XII)', institute: 'Senior Secondary School' },
+    { year: '2018 — 2019', degree: 'Secondary Education (X)', institute: 'High School' },
   ];
 
   return (
@@ -439,11 +433,86 @@ const LanguageProgress = ({ label, percent, proficiency }) => {
 };
 
 
+const WebsitesSection = () => {
+  const websites = [
+    {
+      title: 'InnovateNex',
+      description: 'A modern platform for next-gen innovation and digital transformation.',
+      img: '/websites/innovatenex.png',
+      url: 'https://innovatenex.com/'
+    },
+    {
+      title: 'House of Aaradhya',
+      description: 'E-commerce platform for ethnic wear and designer collections.',
+      img: '/websites/houseofaaradhya.png',
+      url: 'https://houseofaaradhya.com/'
+    },
+    {
+      title: 'AppPress Solution',
+      description: 'Custom app and web development services for businesses.',
+      img: '/websites/apppreesssolution.png',
+      url: 'https://apppreesssolution.in/'
+    }
+  ];
+
+  return (
+    <section id="websites" className="mb-16 scroll-mt-24">
+      <div className="flex items-center mb-8">
+        <h3 className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tight">Website Projects</h3>
+        <div className="ml-4 h-px flex-1 bg-gradient-to-r from-zinc-200 dark:from-zinc-800 to-transparent"></div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {websites.map((site, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className="group relative bg-white dark:bg-zinc-900 rounded-[2rem] overflow-hidden border border-zinc-200/60 dark:border-zinc-800/60 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col"
+          >
+            <div className="aspect-[16/10] overflow-hidden">
+              <img 
+                src={site.img} 
+                alt={site.title}
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+              />
+            </div>
+            
+            <div className="p-6 flex flex-col flex-1">
+              <h4 className="text-xl font-bold text-zinc-900 dark:text-white mb-2">{site.title}</h4>
+              <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-6 flex-1">
+                {site.description}
+              </p>
+              
+              <a 
+                href={site.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-zinc-900 dark:text-white font-bold group/link"
+              >
+                <span>Visit Website</span>
+                <div className="w-8 h-8 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center group-hover/link:bg-zinc-900 dark:group-hover/link:bg-white group-hover/link:text-white dark:group-hover/link:text-zinc-900 transition-all">
+                  <ExternalLink size={14} />
+                </div>
+              </a>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+
 const SkillsAndStrengths = () => {
   const strengths = [
     'Vector Tracing', 'T-Shirt Graphics', 'Branding & Identity', 'Logo Design',
     'Typography', 'Social Media Creatives', 'Digital Artwork', 'Print Design', 
-    'Color Theory', 'Layout Design', 'Mockup Creation', 'Vector Illustration'
+    'Color Theory', 'Layout Design', 'Mockup Creation', 'Vector Illustration',
+    'Website Development', 'UI/UX Design', 'E-commerce Solutions', 'Frontend Design', 
+    'Responsive Layouts'
   ];
 
   return (
@@ -557,50 +626,127 @@ const PortfolioGallery = () => {
       img: '/Product/thumbnail.png',
       tall: false,
     },
+    {
+      title: 'Project Showcase One',
+      category: 'Web Design',
+      img: '/portfolio/s1.png',
+      tall: true,
+    },
+    {
+      title: 'Project Showcase Two',
+      category: 'Web Design',
+      img: '/portfolio/s2.png',
+      tall: false,
+    },
+    {
+      title: 'Project Showcase Three',
+      category: 'Web Design',
+      img: '/portfolio/s3.png',
+      tall: true,
+    },
+    {
+      title: 'Project Showcase Four',
+      category: 'Web Design',
+      img: '/portfolio/s4.png',
+      tall: false,
+    },
+    {
+      title: 'Project Showcase Five',
+      category: 'Web Design',
+      img: '/portfolio/s5.png',
+      tall: true,
+    },
+    {
+      title: 'Project Showcase Six',
+      category: 'Web Design',
+      img: '/portfolio/s6.png',
+      tall: false,
+    },
+    {
+      title: 'Project Showcase Seven',
+      category: 'Web Design',
+      img: '/portfolio/s7.png',
+      tall: true,
+    },
   ];
 
   const [selectedImg, setSelectedImg] = useState(null);
+  const [activeTab, setActiveTab] = useState('All');
+
+  const filteredProjects = projects.filter(proj => {
+    if (activeTab === 'All') return true;
+    if (activeTab === 'Website Work') return proj.category === 'Web Design';
+    if (activeTab === 'Graphic Design') return proj.category !== 'Web Design';
+    return true;
+  });
+
+  const tabs = ['All', 'Graphic Design', 'Website Work'];
 
   return (
     <section id="portfolio" className="mb-16 scroll-mt-24">
-      <div className="flex items-center mb-8">
-        <h3 className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tight">Selected Work</h3>
-        <div className="ml-4 h-px flex-1 bg-gradient-to-r from-zinc-200 dark:from-zinc-800 to-transparent"></div>
+      <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-6">
+        <div className="flex items-center">
+          <h3 className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tight">Selected Work</h3>
+          <div className="ml-4 h-px w-20 bg-gradient-to-r from-zinc-200 dark:from-zinc-800 to-transparent"></div>
+        </div>
+
+        <div className="flex items-center p-1 bg-zinc-100 dark:bg-zinc-800/50 rounded-2xl w-fit">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={cn(
+                "px-5 py-2 text-sm font-bold rounded-xl transition-all duration-300",
+                activeTab === tab 
+                  ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm" 
+                  : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"
+              )}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div className="columns-1 md:columns-2 gap-6">
-        {projects.map((proj, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            onClick={() => setSelectedImg(proj.img)}
-            className={cn(
-              "group relative rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 break-inside-avoid mb-6",
-              proj.tall ? "aspect-[3/4]" : "aspect-square md:aspect-[4/3]"
-            )}
-          >
-            <div className="absolute inset-0 bg-zinc-900/10 group-hover:bg-zinc-900/40 transition-colors z-10" />
-            <img 
-              src={proj.img} 
-              alt={proj.title}
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-              loading="lazy"
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-8 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20 flex justify-between items-end">
-              <div>
-                 <p className="text-white/80 text-sm font-medium mb-1">Web Design</p>
-                 <h4 className="text-white text-xl font-bold">{proj.title}</h4>
+      <motion.div 
+        layout
+        className="columns-1 md:columns-2 gap-6"
+      >
+        <AnimatePresence mode="popLayout">
+          {filteredProjects.map((proj, i) => (
+            <motion.div
+              layout
+              key={proj.img}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.4 }}
+              onClick={() => setSelectedImg(proj.img)}
+              className={cn(
+                "group relative rounded-[2rem] overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 break-inside-avoid mb-6",
+                proj.tall ? "aspect-[3/4]" : "aspect-square md:aspect-[4/3]"
+              )}
+            >
+              <div className="absolute inset-0 bg-zinc-900/10 group-hover:bg-zinc-900/40 transition-colors z-10" />
+              <img 
+                src={proj.img} 
+                alt={proj.title}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                loading="lazy"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-8 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20 flex justify-between items-end">
+                <div>
+                   <p className="text-white/80 text-sm font-medium mb-1">{proj.category}</p>
+                   <h4 className="text-white text-xl font-bold">{proj.title}</h4>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white text-zinc-900 flex items-center justify-center hover:scale-110 transition-transform">
+                  <ExternalLink size={18} />
+                </div>
               </div>
-              <div className="w-10 h-10 rounded-full bg-white text-zinc-900 flex items-center justify-center hover:scale-110 transition-transform">
-                <ExternalLink size={18} />
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
 
       {/* Lightbox Modal */}
       <AnimatePresence>
@@ -778,6 +924,7 @@ function App() {
           <SoftwareGrid />
           <Education />
           <SkillsAndStrengths />
+          <WebsitesSection />
           <PortfolioGallery />
           <Contact />
           
