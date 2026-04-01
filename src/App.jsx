@@ -447,12 +447,6 @@ const WebsitesSection = () => {
       img: '/websites/houseofaaradhya.png',
       url: 'https://houseofaaradhya.com/'
     },
-    {
-      title: 'AppPress Solution',
-      description: 'Custom app and web development services for businesses.',
-      img: '/websites/apppreesssolution.png',
-      url: 'https://apppreesssolution.in/'
-    }
   ];
 
   return (
@@ -462,7 +456,7 @@ const WebsitesSection = () => {
         <div className="ml-4 h-px flex-1 bg-gradient-to-r from-zinc-200 dark:from-zinc-800 to-transparent"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {websites.map((site, i) => (
           <motion.div
             key={i}
